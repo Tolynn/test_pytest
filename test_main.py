@@ -4,16 +4,16 @@ import pytest
 # Тесты для структуры данных float
 
 def test_float_addition():
+    result = 2.5 + 3.7
+    assert result == 6.2
+
+
+def test_float_addition_negative():
     try:
         result = 2.5 + '3.7'
         assert result == 6.2
     except TypeError:
         pass
-
-
-def test_float_addition_negative():
-    result = 2.5 + 3.7
-    assert result == 6.2
 
 
 # Параметризованный тест для структуры данных float
